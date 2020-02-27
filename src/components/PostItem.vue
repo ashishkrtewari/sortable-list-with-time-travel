@@ -32,10 +32,7 @@ import Vue from 'vue'
 import { mapActions, mapGetters } from 'vuex'
 
 export default Vue.extend({
-  name: 'ListItem',
-  data () {
-    return {}
-  },
+  name: 'PostItem',
   computed: {
     ...mapGetters([
       'posts'

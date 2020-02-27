@@ -2,19 +2,19 @@
   <div id="app" class="bg-light-grey overflow-x-hidden">
     <div class="absolute backdrop bg-brand-purple"></div>
     <div class="content grid grid-cols-10 md:grid-cols-12 md:gap-16 grid-flow-row mt-10">
-      <List></List>
+      <PostList></PostList>
       <TimeTravel></TimeTravel>
     </div>
   </div>
 </template>
 
 <script>
-import List from './components/List'
+import PostList from './components/PostList'
 import TimeTravel from './components/TimeTravel'
 export default {
   name: 'App',
   components: {
-    List,
+    PostList,
     TimeTravel
   }
 }

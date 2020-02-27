@@ -1,16 +1,16 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
-import List from '@/components/List'
-import ListItem from '@/components/ListItem'
+import List from '@/components/PostList'
+import PostItem from '@/components/PostItem'
 
 const localVue = createLocalVue()
 
 localVue.use(Vuex)
 
-describe('ListItem Component as Child', () => {
-  it('List contains ListItem Component', () => {
+describe('PostItem Component as Child', () => {
+  it('List contains PostItem Component', () => {
     const wrapper = shallowMount(List, { localVue })
 
-    expect(wrapper.find(ListItem).exists()).toStrictEqual(true)
+    expect(wrapper.find(PostItem).exists()).toStrictEqual(true)
   })
 })

@@ -13,7 +13,9 @@
         <button
           @click="timeTravel({index})"
           class="bg-spring-green col-span-4 flex-shrink-0 h-10 px-3 py-2 rounded text-dark-grey"
-        >Time Travel</button>
+        >
+          Time Travel
+        </button>
       </div>
     </div>
     <div v-else class="bg-light-grey mb-2 p-4 shadow-md">

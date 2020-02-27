@@ -1,6 +1,6 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
-import ListItem from '@/components/ListItem'
+import PostItem from '@/components/PostItem'
 
 const localVue = createLocalVue()
 
@@ -33,7 +33,7 @@ describe('List Item Action Dispatch', () => {
   })
 
   it('dispatches "reOrderPost" when click event fired on "button"', () => {
-    const wrapper = shallowMount(ListItem, { store, localVue })
+    const wrapper = shallowMount(PostItem, { store, localVue })
     const button = wrapper.find('button')
 
     button.element.value = 'button'
