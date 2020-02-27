@@ -29,7 +29,7 @@ export default {
   updateChangesList ({ commit }, { post, posts, index, newIndex }) {
     const newEntry = {
       posts,
-      message: `Moved "Post #${post.id}" from index ${index} to index ${newIndex}`,
+      message: `Moved "Post ${post.id}" from index ${index} to index ${newIndex}`,
       timestamp: Date.now()
     }
     commit('UPDATE_CHANGES_LIST', newEntry)

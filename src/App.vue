@@ -28,8 +28,12 @@ export default {
   width: 100%;
   min-height: 100vh;
 }
+::selection {
+    @apply text-white;
+    @apply bg-brand-purple;
+}
 * {
-  transition: 0.2s;
+  transition: 0.2s ease-in-out;
 }
 .backdrop {
   height: 40vh;
@@ -37,8 +41,6 @@ export default {
   transform: skew(0, -9deg) translateY(-30vh);
 }
 .content {
-  /* width: 100%;
-  margin: auto; */
   transform: skew(0, 0deg);
 }
 </style>
