@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Proxima Nova Semibold-webfont.woff2") format("woff2"),
+    url("../fonts/Proxima Nova Alt Regular-webfont.woff") format("woff");
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translate(0, 100vh);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.animate-slide-in {
+    animation: slide-in 0.5s cubic-bezier(.78,.25,.36,.91);
+}
