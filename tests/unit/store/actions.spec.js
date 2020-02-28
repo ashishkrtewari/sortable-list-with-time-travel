@@ -128,6 +128,7 @@ describe('actions', () => {
     store.dispatch('updateChangesList', { post, posts, index, newIndex })
 
     expect(store.state.changesList[0].posts[0].id).toBe('1')
+    expect(store.state.changesList.length).toBe(5)
   })
 
   it('timeTravel', () => {

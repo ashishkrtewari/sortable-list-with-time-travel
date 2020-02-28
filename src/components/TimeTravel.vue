@@ -13,6 +13,7 @@
         <button
           @click="timeTravel({index})"
           class="bg-spring-green col-span-4 flex-shrink-0 h-10 px-3 py-2 rounded text-dark-grey"
+          aria-label="time travel"
         >
           Time Travel
         </button>
