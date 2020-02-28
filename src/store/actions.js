@@ -2,10 +2,18 @@ import { cloneDeep } from 'lodash'
 
 export default {
   getPosts ({ commit }) {
+    commit('SET_ERROR', false)
+    commit('SET_STATUS_MESSAGE', 'Loading Posts ...')
+
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then(response => response.json())
       .then(posts => {
         commit('SAVE_POSTS', posts.slice(0, 5))
+      })
+      .catch(error => {
+        console.log(error)
+        commit('SET_ERROR', true)
+        commit('SET_STATUS_MESSAGE', 'Failed to fetch Posts')
       })
   },
   reOrderPosts ({ commit, state }, { index, direction }) {

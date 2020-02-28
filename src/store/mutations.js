@@ -7,5 +7,11 @@ export default {
   },
   SAVE_CHANGES_LIST (state, payload) {
     state.changesList = payload
+  },
+  SET_ERROR (state, payload) {
+    state.error = payload
+  },
+  SET_STATUS_MESSAGE (state, payload) {
+    state.statusMessage = payload
   }
 }

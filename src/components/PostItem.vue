@@ -46,12 +46,8 @@ export default Vue.extend({
   },
   methods: {
     ...mapActions([
-      'getPosts',
       'reOrderPosts'
     ])
-  },
-  created () {
-    this.getPosts()
   }
 })
 </script>

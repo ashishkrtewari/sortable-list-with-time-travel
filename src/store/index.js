@@ -9,7 +9,9 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     changesList: [],
-    posts: []
+    posts: [],
+    statusMessage: 'Loading Posts ...',
+    error: false
   },
   actions,
   getters,
