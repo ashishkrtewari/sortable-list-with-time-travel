@@ -32,7 +32,7 @@ export default {
     @apply text-white;
     @apply bg-brand-purple;
 }
-* {
+.content * {
   transition: 0.2s ease-in-out;
 }
 .backdrop {
