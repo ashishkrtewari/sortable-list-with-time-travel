@@ -36,9 +36,14 @@ export default {
   transition: 0.2s ease-in-out;
 }
 .backdrop {
-  height: 40vh;
+  height: 24.5vw;
   width: 100vw;
-  transform: skew(0, -9deg) translateY(-30vh);
+  transform: skew(0, -10deg) translateY(-15.5vw)
+}
+@media (max-width: 640px){
+  .backdrop {
+    height: 18rem;
+  }
 }
 .content {
   transform: skew(0, 0deg);
