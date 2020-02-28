@@ -10,8 +10,7 @@ export default {
       .then(posts => {
         commit('SAVE_POSTS', posts.slice(0, 5))
       })
-      .catch(error => {
-        console.log(error)
+      .catch(_error => {
         commit('SET_ERROR', true)
         commit('SET_STATUS_MESSAGE', 'Failed to fetch Posts')
       })
