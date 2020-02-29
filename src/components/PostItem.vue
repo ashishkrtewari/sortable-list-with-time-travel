@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <transition-group name="list-item" tag="section">
     <div
       class="bg-white grid grid-cols-12 items-center mb-2 px-3 py-2 post-item rounded shadow-md"
       :key="post.id"
@@ -30,7 +30,7 @@
         </button>
       </div>
     </div>
-  </section>
+  </transition-group>
 </template>
 
 <script>
@@ -55,5 +55,8 @@ export default Vue.extend({
 <style scoped>
 .post-item {
   min-height: 5.5rem;
+}
+.list-item-move {
+  transition: transform 0.3 cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
 </style>
